@@ -13,7 +13,7 @@ public class StartApplication {
     @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "This is a SpringBoot Static Web Application for our Devops project");
-        model.addAttribute("msg", "Application Is Deployed To Docker host using jenkins");
+        model.addAttribute("msg", "Application Is packed and Deployed To Docker host using Maven and jenkins");
         return "index";
     }
 
