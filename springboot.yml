@@ -1,5 +1,6 @@
 - hosts: dockerhost
+  remote_user: ansadmin
 
   tasks:
   - name: create docker container
-    command: sudo docker build . -t springboot:latest
+    command: docker build -t springboot:latest /home/ansadmin/spring/
