@@ -4,3 +4,9 @@
   tasks:
   - name: create docker container
     command: docker build -t springboot:latest /home/ansadmin/spring/
+
+  - name: tag the image
+    command: docker image tag springboot:latest masterdevopstools/spring
+
+  - name: push to docker hub
+    command: docker image push masterdevopstools/spring
