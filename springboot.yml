@@ -10,3 +10,6 @@
 
   - name: push to docker hub
     command: docker image push masterdevopstools/spring
+    
+  - name: run the docker container
+    command: docker run -d -p 8080:8080 springboot java -jar /spring.jar
